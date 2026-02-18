@@ -1,13 +1,10 @@
-FROM python:3.10.11-slim-buster
+FROM python:3.10-slim
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
-COPY phishfiner phishfiner
-
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN pip install evidently==0.4.17
-
-CMD [ "python3","app.py" ]
+CMD ["python", "app.py"]
