@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+phishfiner/
+Lib/
+Scripts/
+Include/
+
+# Logs
+logs/
+
+# Artifacts
+artifacts/
+
+# Model files (optional if large)
+*.pkl
+
+# Cache
+__pycache__/
+*.pyc
+
+# Env
+.env
+
+# IDE
+.vscode/

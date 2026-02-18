@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing detection</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <!-- partial:index.partial.html -->
+    <form action="/train" method="post" enctype="multipart/form-data">
+
+        <h1 class="title">Upload CSV for the training</h1>
+
+<div class="frame">
+    <div class="center">
+        <div class="title">
+            <h1>Drop file to upload</h1>
+        </div>
+
+            <div class="dropzone">
+                <img src="https://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                <input type="file" class="upload-input" name="file" accept=".csv">
+            </div>
+
+        <button type="submit" class="btn" name="uploadbutton">Upload file</button>
+    </div>
+</div>
+
+</form>
+<!-- original pen: https://codepen.io/ryanjyost/pen/YxZqpx -->
+
+<!-- no JS needed -->
+<!-- partial -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
