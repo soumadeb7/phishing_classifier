@@ -68,6 +68,10 @@ def predict():
             "message": str(e)
         }), 500
 
+@app.route("/health")
+def health():
+    return {"status": "ok"}, 200
+
 
 #if __name__ == "__main__":
     #port = int(os.environ.get("PORT", 10000))  # Render sets PORT automatically
