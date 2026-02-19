@@ -26,4 +26,3 @@ neuro-mf==0.0.5
 boto3==1.26.105
 numpy==1.26.4
 pandas
--e .
